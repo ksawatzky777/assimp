@@ -1141,6 +1141,7 @@ ENDIF()
 
 ADD_LIBRARY( assimp ${assimp_src} )
 ADD_LIBRARY(assimp::assimp ALIAS assimp)
+set_target_properties(assimp PROPERTIES FOLDER dependencies)
 
 TARGET_USE_COMMON_OUTPUT_DIRECTORY(assimp)
 
